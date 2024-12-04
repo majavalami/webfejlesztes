@@ -55,3 +55,21 @@ alert(`A kód Christopher Nolan egyik filmjében egy széf nyitásának kulcsa!`
 
 
 
+//F-O-G-L-A-L-Á-S
+document.getElementById("foglal").addEventListener("click", foglalas);
+
+function foglalas()
+{
+    let fizetendo=0;
+
+    if ((document.getElementById("csop").value)=="2-3 fős csapat"){fizetendo+=15000}
+    if ((document.getElementById("csop").value)=="4-5 fős csapat"){fizetendo+=20000}
+    if ((document.getElementById("csop").value)=="6-8 fős csapat"){fizetendo+=25000}
+
+    if ((document.getElementById("diak").checked)){fizetendo*=0.85}
+    if ((document.getElementById("nyugdijas").checked)){fizetendo*=0.80}
+    if ((document.getElementById("csalad").checked)){fizetendo*=0.75}
+    if ((document.getElementById("ajandek").checked)){fizetendo*=0.90}
+
+    document.getElementById("vegosszeg").value=`A fizetendő összeg ${Math.round(fizetendo)} forint.`
+}

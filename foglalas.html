@@ -10,26 +10,6 @@
     <title>DREAMZ</title>
     <link href="style.css" rel="stylesheet">
     <link rel="icon" href="pics/Fav.png" type="image/x-icon">
-    
-    <script>
-                //F-O-G-L-A-L-Á-S
-
-        function foglalas()
-        {
-            let fizetendo=0;
-
-            if ((document.getElementById("csop").value)=="2-3 fős csapat"){fizetendo+=15000}
-            if ((document.getElementById("csop").value)=="4-5 fős csapat"){fizetendo+=20000}
-            if ((document.getElementById("csop").value)=="6-8 fős csapat"){fizetendo+=25000}
-
-            if ((document.getElementById("diak").checked)){fizetendo*=0.85}
-            if ((document.getElementById("nyugdijas").checked)){fizetendo*=0.80}
-            if ((document.getElementById("csalad").checked)){fizetendo*=0.75}
-            if ((document.getElementById("ajandek").checked)){fizetendo*=0.90}
-
-            document.getElementById("vegosszeg").value=`A fizetendő összeg ${Math.round(fizetendo)} forint.`
-        }
-    </script>
 </head>
 
 
@@ -185,7 +165,7 @@
                     <input type="email" name="mail" size="30" placeholder="robertfisher@gmail.com">
                 </p>
 
-                <input class="jelszo sub" type="button" value="Foglalás elküldése" id="fogl" onclick="foglalas()">
+                <input class="jelszo sub" type="button" value="Foglalás elküldése" id="foglal">
                 <input class="jelszo" type="reset" value="Törlés">
                 <input class="jelszo" type="text" size="30" value="" id="vegosszeg">
             </form>
