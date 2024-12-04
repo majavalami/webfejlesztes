@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bertalan Maja">
+    <meta name="copyright" content="Az oldal oktatási célokra jött létre">
+    <meta name="description" content="Egy kitalált szabadulószoba weboldala (beadandó)">
+    
+    <title>DREAMZ</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="pics/Fav.png" type="image/x-icon">
+    
+    <script>
+                //F-O-G-L-A-L-Á-S
+
+        function foglalas()
+        {
+            let fizetendo=0;
+
+            if ((document.getElementById("csop").value)=="2-3 fős csapat"){fizetendo+=15000}
+            if ((document.getElementById("csop").value)=="4-5 fős csapat"){fizetendo+=20000}
+            if ((document.getElementById("csop").value)=="6-8 fős csapat"){fizetendo+=25000}
+
+            if ((document.getElementById("diak").checked)){fizetendo*=0.85}
+            if ((document.getElementById("nyugdijas").checked)){fizetendo*=0.80}
+            if ((document.getElementById("csalad").checked)){fizetendo*=0.75}
+            if ((document.getElementById("ajandek").checked)){fizetendo*=0.90}
+
+            document.getElementById("vegosszeg").value=`A fizetendő összeg ${Math.round(fizetendo)} forint.`
+        }
+    </script>
+</head>
+
+
+<body>
+    <a href="index.html" id="felugras">
+        <header>
+            <h1>D-R-E-A-M-Z</h1>
+            <h2><span class="slog">Don't try to understand it. Feel it.</span><br>
+            Szabadulószobák a nagysikerű <span class="chris">Christopher Nolan</span> filmjei alapján</h2>
+        </header>
+    </a>
+
+    <nav>
+        <a href="index.html">Kezdőlap</a>
+        <a href="szobak.html">Szobák</a>
+        <a href="foglalas.html" class="active">Árak és foglalás</a>
+        <a href="urlapok.html">Visszajelzés</a>
+    </nav>
+
+
+
+    <div class="container">
+        <article class="leiras3">
+            <h2>Foglalj időpontot, és lépj be a fantázia világába!</h2>
+            <p>Légy részese az izgalomnak! Az alábbiakban gyorsan és egyszerűen lefoglalhatod a szabadulószobát csapatod számára:</p>
+
+            <p>Szeretettel várunk, hogy kipróbáld egyedi, Christopher Nolan filmjei által inspirált szabadulószobáinkat! A foglalási folyamat egyszerű, és néhány lépés alatt biztosíthatod a helyed egy felejthetetlen kalandra. Válaszd ki az időpontot, a résztvevők számát, és merülj el az álmok, időparadoxonok és izgalmas rejtélyek világában!</p>
+
+            <p>Ne hagyd ki ezt a páratlan élményt - állítsd próbára magadat és barátaidat a Nolan-univerzum lenyűgöző világában! Foglalj most, és készülj fel az izgalmakra. Várunk a startvonalnál!</p>
+
+            <p><span class="chris">Fontos!</span> <span class="fontos">Foglalásodat kérjük, hogy legalább 24 órával az érkezés előtt add le! Lemondás esetén kérjük, értesíts minket a lehető leghamarabb.</span></p>
+        </article>
+
+        <article class="tippek tab">
+            <h2>Miért foglalj előre?</h2>
+            <ul>
+                <li>Garantált hely az általad választott időpontban.</li>
+                <li>Személyre szabott élmény a csapatod számára.</li>
+                <li>Kényelmes és gyors foglalási folyamat.</li>
+            </ul>
+        </article>
+
+        <article class="tippek">
+            <h2>Hogyan foglalhatsz?</h2>
+            <ul>
+                <li>Válaszd ki az időpontot és a szobát, amelyet kipróbálnál.</li>
+                <li>Add meg a csapatod létszámát és az elérhetőségeidet.</li>
+                <li>Küldd el a foglalásodat, és hamarosan visszaigazolást kapsz e-mailben.</li>
+            </ul>
+        </article>
+
+        <article class="tippek">
+            <h2>Foglalj online vagy telefonon:</h2>
+            <ul>
+                <li>Online: Töltsd ki az alábbi űrlapot, és pár percen belül visszaigazolást kapsz.</li>
+                <li>Telefon: Hívd ügyfélszolgálatunkat a +36 30 123 4567-es számon.</li>
+            </ul>
+        </article>
+          
+
+        <aside class="arlista">
+            <h2>Árak</h2>
+            <p>A szabadulószobáink árai a csapat méretétől függően alakulnak, hogy mindenki számára elérhető legyen az élmény. Az árak az alábbiak szerint alakulnak:</p>
+            <table>
+                <tr>
+                    <td>2-3 fős csapat: </td>
+                    <td>15 000 Ft</td>
+                </tr>
+                <tr>
+                    <td>4-5 fős csapat: </td>
+                    <td>20 000 Ft</td>
+                </tr>
+                <tr>
+                    <td>6-8 fős csapat: </td>
+                    <td>25 000 Ft</td>
+                </tr>
+            </table>
+            
+            <p>A foglalási ár tartalmazza a teljes játékidőt, egy dedikált játékmestert, és a különleges Nolan-ihlette hangulatot!</p>
+        </aside>
+
+        <aside class="arlista utolso">
+            <h2>Elérhetőség</h2>
+            <p>Keress minket bizalommal, ha kérdésed van, vagy további információra lenne szükséged! Az alábbi elérhetőségeken érhetsz el minket:</p>
+            
+            <table>
+                <tr>
+                    <td>Cím: </td>
+                    <td>Budapest, Nolan utca 12.</td>
+                </tr>
+                <tr>
+                    <td>E-mail: </td>
+                    <td>info@dreamzszabaduloszoba.hu</td>
+                </tr>
+                <tr>
+                    <td>Telefon: </td>
+                    <td>+36 30 123 4567</td>
+                </tr>
+            </table>
+
+            <p>Bármikor örömmel segítünk a kérdéseid megválaszolásában vagy a foglalásod lebonyolításában!</p>
+        </aside>
+
+
+
+        <article class="tippek tab">
+            <h2>Foglalás</h2>
+            
+            <form method="post" action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php">
+                <p>
+                    <label>
+                        Válaszd ki a csapatod létszámát!<br>
+                        <input type="text" list="li" name="csoport" size="20" id="csop">
+                    </label>
+                    <datalist id="li">
+                        <option>2-3 fős csapat</option>
+                        <option>4-5 fős csapat</option>
+                        <option>6-8 fős csapat</option>
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="szoba">Válaszd ki a szobát!</label><br>
+                        <select name="szoba" id="szoba">
+                            <option disabled selected>Itt válassz!</option>
+                            <option value="eredet">"Az Álmodók világa"</option>
+                            <option value="CsK">„A galaxis végtelenében”</option>
+                            <option value="Bat">„Gotham árnyékában”</option>
+                            <option value="trukk">„A végső illúzió”</option>
+                            <option value="memento">„Az emlékek fogságában”</option>
+                            <option value="tenet">„Az idő visszafordítása”</option>
+                            <option value="Op">„A láncreakció”</option>
+                        </select>
+                </p>
+
+                <p>
+                    Válaszd ki az időpontot!<br>
+                    <label><input type="radio" name="idopont" value="13">13:00-14:00</label><br>
+                    <label><input type="radio" name="idopont" value="15">15:00-16:00</label><br>
+                    <label><input type="radio" name="idopont" value="17">17:00-18:10</label><br>
+                    <label><input type="radio" name="idopont" value="19">19:00-20:10</label><br>
+                </p>
+
+                <p>
+                    Kedvezmények:<br>
+                    <label><input type="radio" name="kedvezmeny" value="diak" id="diak">Diákkedvezmény</label><br>
+                    <label><input type="radio" name="kedvezmeny" value="nyugdijas" id="nyugdijas">Nyugdíjas kedvezmény</label><br>
+                    <label><input type="radio" name="kedvezmeny" value="csalad" id="csalad">Családi ikedvezmény</label><br>
+                    <label><input type="radio" name="kedvezmeny" value="ajandek" id="ajandek">Ajándékutalvány</label><br>
+                    <label><input type="radio" name="kedvezmeny" value="nincs">Nincs kedvezmény</label>
+                </p>
+                <p>
+                    <input type="email" name="mail" size="30" placeholder="robertfisher@gmail.com">
+                </p>
+
+                <input class="jelszo sub" type="button" value="Foglalás elküldése" id="fogl" onclick="foglalas()">
+                <input class="jelszo" type="reset" value="Törlés">
+                <input class="jelszo" type="text" size="30" value="" id="vegosszeg">
+            </form>
+        </article>
+    </div>
+
+    <footer>
+        <span class="chris">Bertalan Maja 2024</span>
+        <h2><a class="link" href="#felugras">Webfejlesztés beadandó feladat</a></h2>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
