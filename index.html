@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bertalan Maja">
+    <meta name="copyright" content="Az oldal oktatási célokra jött létre">
+    <meta name="description" content="Egy kitalált szabadulószoba weboldala (beadandó)">
+
+    <title>DREAMZ</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="pics/Fav.png" type="image/x-icon">
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="galeria/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="galeria/slick-1.8.1/slick/slick-theme.css">
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .slider {
+            width: 90%;
+            min-width: 400px;
+            margin: 30px auto;
+            border: solid #780000;
+            padding-top: 5px;
+        }
+
+        .slick-slide {
+            margin: 0px 5px;
+        }
+
+        .slick-slide img {
+            width: 100%;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: #780000;
+        }
+
+        .slick-slide {
+            transition: all ease-in-out .3s;
+            opacity: .2;
+        }
+
+        .slick-active {
+            opacity: .4;
+        }
+
+        .slick-current {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <a href="index.html" id="felugras">
+        <header>
+            <h1>D-R-E-A-M-Z</h1>
+            <h2><span class="slog">Don't try to understand it. Feel it.</span><br>
+            Szabadulószobák a nagysikerű <span class="chris">Christopher Nolan</span> filmjei alapján</h2>
+        </header>
+    </a>
+
+    <nav>
+        <a href="index.html" class="active">Kezdőlap</a>
+        <a href="szobak.html">Szobák</a>
+        <a href="foglalas.html">Árak és foglalás</a>
+        <a href="urlapok.html">Visszajelzés</a>
+    </nav>
+    
+  
+
+    <div class="container1">
+        <section class="bal">
+            <article>
+                <h2>Üdvözlünk a <span class="chris">D-R-E-A-M-Z</span> világában!</h2>
+                <p>A D-R-E-A-M-Z szabadulószobák nem csupán egyszerű játékok - ezek olyan élmények, amelyek Christopher Nolan mesterműveiből merítenek inspirációt, hogy elhozzák neked a feszültséggel, fordulatokkal és izgalmakkal teli történetek esszenciáját. Képzeld el, hogy belépsz egy olyan helyre, ahol a valóság határai eltűnnek, és a képzelet szabadon szárnyalhat! </p>
+                <p>Legyen szó arról, hogy az Eredet álomszerű világában jársz, megmentesz egy bolygót az Csillagok között ihlette térben, vagy épp a saját emlékeid csapdájában találod magad a Memento történéseihez hasonlóan, nálunk garantáltan minden pillanat egy új kihívást rejt. A szobáink olyan részletességgel készültek, hogy teljesen magával ragadnak - még akkor is, ha nem vagy a filmek rajongója.</p>
+            </article>
+            
+            <article>
+                <h2>Rólunk</h2>
+                <p>A küldetéseket úgy alakítottuk ki, hogy minden játékos megtalálja a saját útját. A történetek és a rejtvények nemcsak logikát, hanem csapatmunkát is igényelnek. És hogy még egyedibbé tegyük az élményt, a szobákban lévő karakterek - mint például egy nyomozó vagy egy segítőtárs - mindig készen állnak arra, hogy egy-egy tippel kisegítsenek titeket.</p>
+                <p>Nálunk nemcsak a győzelem számít, hanem az, ahogy a történet alakul. Minden döntésed, minden helyesen (vagy épp rosszul) megoldott feladat befolyásolja a játék végét - több befejezés közül ti alakíthatjátok ki a sajátotokat.</p>
+            </article>
+
+            <article>
+                <h2>Végszó</h2>
+                <p>Ha készen állsz arra, hogy szembenézz az álmok, az idő és a tér rejtélyeivel, gyűjtsd össze a csapatodat, és készülj fel életed egyik legizgalmasabb kalandjára!<br>
+                Az idő elkezdődött. Vajon ti is készen álltok?</p>
+            </article>
+        </section>
+
+        <section class="jobb">
+            <aside>
+                <h3>Mi vár rád nálunk?</h3>
+                <ul>
+                    <li>Eredet - „Az Álmodók világa” <br>
+                        Merülj el az álom és valóság határán, ahol minden döntésed következményekkel jár
+                    </li>
+                    <li>Csillagok között - „A galaxis végtelenében” <br>
+                        Képzeld el, hogy egy másikra utazva kell megoldanod a Föld jövőjét fenyegető titkot!
+                    </li>
+                    <li>Memento - „Az emlékek fogságában” <br>
+                        A világ, ahol a memória határai korlátosak. Minden nyom, amit találsz, egy újabb kérdést vet fel.
+                    </li>
+                    <li>A tökéletes trükk - „Illúzió: A bűvész titkai” <br>
+                        Fejtsd meg a legnagyobb bűvésztrükköket, és leplezd le az illúziók világát!
+                    </li>
+                </ul>
+            </aside>
+        </section>
+    </div>
+    
+    
+    
+    <!--G-A-L-É-R-I-A-->
+    
+    <section class="center slider">
+        <div><img src="galeria/kepek/idea.jpg" alt="villanykörte" title="Egy gondolat"></div>
+        <div><img src="galeria/kepek/mistery.jpg" alt="nagyító" title="A relytély"></div>
+        <div><img src="galeria/kepek/dream.jpg" alt="álomfogó" title="Az álom"></div>
+        <div><img src="galeria/kepek/time.jpg" alt="óra a homokban" title="Az idő"></div>
+        <div><img src="galeria/kepek/fantasy.jpg" alt="világító gombák lepkékkel" title="Az elme"></div>
+        <div><img src="galeria/kepek/key.jpg" alt="kulcs" title="A megoldás"></div>
+        <div><img src="galeria/kepek/memory.jpg" alt="diaszalag" title="Az emlékek"></div>
+    </section>
+    
+    <script src="galeria/slick-1.8.1/slick/slick.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+
+            $(".center").slick({
+                dots: true,
+                infinite: true,
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerPadding: '150px',
+                            slidesToShow: 1
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            arrows: false,
+                            centerPadding: '60px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+    <footer>
+        <span class="chris">Bertalan Maja 2024</span>
+        <h2><a class="link" href="#felugras">Webfejlesztés beadandó feladat</a></h2>
+    </footer>
+</body>
+</html>
